@@ -1,9 +1,20 @@
 <body class="jumbotron #ffa726 orange lighten-1">
-<p>
-       
+<p class="md-form white-text"><i class="fa fa-spinner fa-spin white-text"></i>
+      <!-- <div class="md-form white-text">
+                  
+
+                  PUBLISHED:  {{}}
+                  <label for="date"></label><br>
+                  <input type="date" class="form-control white-text" id="" [(ngModel)]="newQuote.dateAgo" name="" required> -->
+        
+        
         SUBJECT: <br>{{quote.subject}} <br><br><hr>
+        <i class="fa fa-spinner fa-spin white-text"></i>
         QUOTE: <br>{{quote.quote}} <br><br><hr>
+        <i class="fa fa-spinner fa-spin white-text"></i>
         {{quote.description}} <br><br><hr>
+        PUBLISHED: {{myDate | date}}
+        
 
         
          
