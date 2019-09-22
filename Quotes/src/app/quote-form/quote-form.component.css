@@ -1,0 +1,99 @@
+
+html,body {
+	height:100%;
+    background:center no-repeat fixed url('http://worldstudieslahsportfolio.weebly.com/uploads/1/2/4/1/12418518/643596731.jpg');
+    background-size: cover;
+    color:#444;
+    font-family: 'Lato', sans-serif;
+}
+
+  
+#section4 {
+	background-color: #f6f6f6;
+	color:#444;
+}
+  
+#section2 {
+	background-color: #fff;
+}
+
+#section3 {
+	background-color: rgba(0,0,0,0.9);
+}
+
+#section5 {
+	background-color: #fff;
+}
+
+#section6 {
+    background-color: #eee;
+	min-height:130px;
+	padding-top:40px;
+	padding-bottom:40px;
+}
+
+#section7 {
+	background-color: #f44d3c;
+	color: #f6f6f6;
+	min-height:130px;
+	padding-top:40px;
+	padding-bottom:40px;
+}
+
+footer {
+	background-color:#2b2b2b;
+    color:#ddd;
+    min-height:100px;
+    padding-top:20px;
+    padding-bottom:40px;
+}
+
+footer .nav>li>a {
+    padding: 3px;
+    color: aqua;
+}
+
+footer .nav>li>a:hover {
+    background-color:transparent;
+	color:#fff;
+}
+
+ 
+.button1 {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button1 .btn {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button1 .btn:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button1:hover .btn {
+    padding-right: 25px;
+  }
+  
+  .button1:hover .btn:after {
+    opacity: 1;
+    right: 0;
+  }
+   

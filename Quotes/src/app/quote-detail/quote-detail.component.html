@@ -1,0 +1,33 @@
+<body class="jumbotron #ffa726 orange lighten-1">
+<p>
+       
+        SUBJECT: <br>{{quote.subject}} <br><br><hr>
+        QUOTE: <br>{{quote.quote}} <br><br><hr>
+        {{quote.description}} <br><br><hr>
+
+        
+         
+        
+        
+</p>
+
+         
+        <div>
+        <button (click)="upvoteButtonClick ()" class="btn btn-primary">Upvote</button> <br>{{numberOfUpvotes}} <br> <hr>
+        <button (click)="downvoteButtonClick()" class="btn btn-danger">Downvote</button> <br> {{numberOfDownvotes}} <br> <hr>
+
+        
+
+
+        </div>
+
+
+
+        <button class="btn btn-dark" (click)='quoteDelete(true)'>Delete Quote</button>
+            
+        
+
+                
+</body>
+
+
