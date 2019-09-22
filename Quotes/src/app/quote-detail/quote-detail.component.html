@@ -1,5 +1,7 @@
 <body class="jumbotron #ffa726 orange lighten-1">
-<p class="md-form white-text"><i class="fa fa-spinner fa-spin white-text"></i>
+                CREATED BY:  {{ quote.name }}
+
+<div class="md-form white-text"><h4 class="blue-text"><i class="fa fa-spinner fa-spin blue-text"></i>SUBJECT:</h4>
       <!-- <div class="md-form white-text">
                   
 
@@ -8,19 +10,22 @@
                   <input type="date" class="form-control white-text" id="" [(ngModel)]="newQuote.dateAgo" name="" required> -->
         
         
-        SUBJECT: <br>{{quote.subject}} <br><br><hr>
-        <i class="fa fa-spinner fa-spin white-text"></i>
-        QUOTE: <br>{{quote.quote}} <br><br><hr>
-        <i class="fa fa-spinner fa-spin white-text"></i>
+         <br>{{quote.subject}} <br><br><hr>
+        <h4 class="red-text"><i class="fa fa-spinner fa-spin red-text"></i>QUOTE:</h4>
+         <br>{{quote.quote}} <br><br><hr>
+        <h4 class="green-text"><i class="fa fa-spinner fa-spin green-text"></i>Description:</h4>
+        
         {{quote.description}} <br><br><hr>
-        PUBLISHED: {{myDate | date}}
+        <div class=" blue-text">
+                PUBLISHED: {{quote.myDate | dateAgo}}    
+        </div>
         
 
         
          
         
         
-</p>
+      </div>
 
          
         <div>
@@ -34,7 +39,7 @@
 
 
 
-        <button class="btn btn-dark" (click)='quoteDelete(true)'>Delete Quote</button>
+        <button class="btn btn-dark fa fa-trash-o fa-lg"  (click)='quoteDelete(true)'>  Delete Quote</button>
             
         
 
