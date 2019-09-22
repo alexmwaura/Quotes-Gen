@@ -1,5 +1,6 @@
 export class Quote {
     showDescription: boolean;
+    public myDate : Date
     constructor(
         public id: number,
         public name: string,
@@ -9,5 +10,6 @@ export class Quote {
 
     ){
         this.showDescription = false;
+        this.myDate = new Date ()
     }
 }
