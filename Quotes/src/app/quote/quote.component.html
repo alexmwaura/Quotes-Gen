@@ -17,7 +17,7 @@
             class="container-fluid "
             *ngFor="let quote of quotes; let i = index"
           >
-            <p id="{{ i }}" style="color: aliceblue;" appHighlight>
+            <p id="{{ i }}" appHighlight style="color: aliceblue;" >
               PUBLISHED:  {{quote.date | dateAgo}} <br>
               
               CREATED BY:  {{ quote.name }} 
