@@ -18,7 +18,7 @@ export class HighlightDirective {
   }
 
   private textDeco(action:string){
-    this.elem.nativeElement.style.textDecoration = action;
+    this.elem.nativeElement.style.textDeco = action;
   }
 
 }
