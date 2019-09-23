@@ -1,49 +1,46 @@
 <body class="jumbotron #827717 lime darken-4">
-                <div class="btn btn-dark white-text">
-                                CREATED BY:  {{ quote.name }}
-                </div>
+  <div class="btn btn-dark white-text">CREATED BY: {{ quote.name }}</div>
 
-<div class="md-form white-text"><h4 class="blue-text"><i class="fa fa-spinner fa-spin blue-text"></i>SUBJECT:</h4>
-   
-        
-        
-         <div appHighlight>
-                <br>{{quote.subject}} <br><br><hr>
-                <h4 class="red-text"><i class="fa fa-spinner fa-spin red-text"></i>QUOTE:</h4>
-         <br>{{quote.quote}} <br><br><hr>
-        <h4 class="green-text"><i class="fa fa-spinner fa-spin green-text"></i>Description:</h4>
-        
-        {{quote.description}} <br><br><hr>
-         </div>
-        
-        <div class="btn">
-                PUBLISHED: {{quote.myDate | dateAgo}}    
-        </div>
-        
+  <div class="md-form white-text">
+    <h4 class="blue-text">
+      <i class="fa fa-spinner fa-spin blue-text"></i>SUBJECT:
+    </h4>
 
-        
-         
-        
-        
-      </div>
+    <div appHighlight>
+      <br />{{ quote.subject }} <br /><br />
+      <hr />
+      <h4 class="red-text">
+        <i class="fa fa-spinner fa-spin red-text"></i>QUOTE:
+      </h4>
+      <br />{{ quote.quote }} <br /><br />
+      <hr />
+      <h4 class="green-text">
+        <i class="fa fa-spinner fa-spin green-text"></i>Description:
+      </h4>
 
-         
-        <div>
-        <button (click)="upvoteButtonClick ()" class="btn btn-primary">Upvote</button> <br> {{numberOfUpvotes}} <br> <hr>
-        <button (click)="downvoteButtonClick ()" class="btn btn-danger">Downvote</button> <br> {{numberOfDownvotes}} <br> <hr>
+      {{ quote.description }} <br /><br />
+      <hr />
+    </div>
 
-        
+    PUBLISHED: {{ quote.myDate | dateAgo }}
+  </div>
 
+  <div>
+    <button (click)="upvoteButtonClick()" class="btn btn-primary">
+      Upvote
+    </button>
+    <br />
+    {{ numberOfUpvotes }} <br />
+    <hr />
+    <button (click)="downvoteButtonClick()" class="btn btn-danger">
+      Downvote
+    </button>
+    <br />
+    {{ numberOfDownvotes }} <br />
+    <hr />
+  </div>
 
-        </div>
-
-
-
-        <button class="btn btn-dark fa fa-trash-o fa-lg"  (click)='quoteDelete(true)'>  Delete Quote</button>
-            
-        
-
-                
+  <button class="btn btn-dark fa fa-trash-o fa-lg" (click)="quoteDelete(true)">
+    Delete Quote
+  </button>
 </body>
-
-
