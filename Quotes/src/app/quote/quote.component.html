@@ -18,11 +18,11 @@
             class="container-fluid "
             *ngFor="let quote of quotes; let i = index"
           >
-            <p id="{{ i }}" appHighlight style="color: aliceblue;">
+            <p id="{{ i }}"  style="color: aliceblue;">
               <br />
             </p>
 
-            <button
+            <button appHighlight
               class="btn #827717 lime darken-4"
               (click)="toggleDetails(i)"
             >
