@@ -8,18 +8,18 @@
 
     <div appHighlight>
       <br />{{ quote.subject }} <br /><br />
-      <hr />
+      <hr>
       <h4 class="red-text">
         <i class="fa fa-spinner fa-spin red-text"></i>QUOTE:
       </h4>
       <br />{{ quote.quote }} <br /><br />
-      <hr />
+      <hr>
       <h4 class="green-text">
         <i class="fa fa-spinner fa-spin green-text"></i>Description:
       </h4>
 
       {{ quote.description }} <br /><br />
-      <hr />
+      <hr>
     </div>
 
     PUBLISHED: {{ quote.myDate | dateAgo }}
@@ -37,7 +37,7 @@
     </button>
     <br />
     {{ numberOfDownvotes }} <br />
-    <hr />
+    <hr>
   </div>
 
   <button class="btn btn-dark fa fa-trash-o fa-lg" (click)="quoteDelete(true)">
