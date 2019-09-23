@@ -7,18 +7,18 @@
     </h4>
 
     <div>
-      <br />{{ quote.subject }} <br /><br />
+      {{ quote.subject }} <br><br>
       <hr>
       <h4 class="red-text">
         <i class="fa fa-spinner fa-spin red-text"></i>QUOTE:
       </h4>
-      <br />{{ quote.quote }} <br /><br />
+      <br />{{ quote.quote }} <br><br>
       <hr>
       <h4 class="green-text">
         <i class="fa fa-spinner fa-spin green-text"></i>Description:
       </h4>
 
-      {{ quote.description }} <br /><br />
+      {{ quote.description }} <br><br>
       <hr>
     </div>
 
@@ -29,14 +29,14 @@
     <button (click)="upvoteButtonClick()" class="btn btn-primary">
       Upvote
     </button>
-    <br />
-    {{ numberOfUpvotes }} <br />
+    <br>
+    {{ numberOfUpvotes }} <br>
     <hr />
     <button (click)="downvoteButtonClick()" class="btn btn-danger">
       Downvote
     </button>
-    <br />
-    {{ numberOfDownvotes }} <br />
+    <br>
+    {{ numberOfDownvotes }} <br>
     <hr>
   </div>
 
