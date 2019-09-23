@@ -1,0 +1,46 @@
+<body>
+  <div class="container-fluid">
+    <h1 style="text-align: center; color: black; font-size: xx-large;">
+      My Quotes
+    </h1>
+    <hr>
+    
+
+    <div class="row">
+      <div class="col-md-8">
+
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+      </div>
+
+      <div class="col-md-4">
+        <ul>
+          <div
+            class="container-fluid "
+            *ngFor="let quote of quotes; let i = index"
+          >
+            <p id="{{ i }}"  style="color: aliceblue;">
+              <br />
+            </p>
+
+            <button appHighlight
+              class="btn #827717 lime darken-4"
+              (click)="toggleDetails(i)"
+            >
+              VIEW QUOTES</button
+            ><br />
+
+            <div *ngIf="quote.showDescription">
+              <br /><br />
+              <hr />
+
+              <app-quote-detail [quote]="quote" (isComplete)="completeQuote($event, i)"></app-quote-detail>
+
+              <hr />
+            </div>
+            
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
