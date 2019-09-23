@@ -1,13 +1,39 @@
 
-#  MOREO RESTAURANT
+# QUOTE-GEN
 
- MOREO-RESTAURANT
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
+
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
 
 
 
 ## Versioning
 
- MOREO-RESTAURANT-V1.0 
+ V1.0 
 
 ## Author
 
@@ -18,45 +44,42 @@
 
 As a user of the website you will be able to:
 
-1. ON HOME PAGE CLICK NAVBAR TO SELECT VIEW 
-2. ON VIEW PAGE CLICK NAVBAR TO SELECT ORDER
-3. ON VIEW PAGE CLICK IMAGES TO SEE VARIOUS PRICES
-4. FILL FORM TO MAKE ORDER AND CLICK PICK OR DELIVER
-5. CLICK CHECKOUT TO VIEW ORDER
+1. Add a quote
+2. View Quote added
+3. Delete Quote
+4. Upvote Quote
+5. Downvote
 
 
 
 ## Behaviour Driven Development (BDD)
 |Behaviour 	           |    Input 	                 |       Output          |
 |----------------------------------------------|:-----------------------------------:|-----------------------------:|       
-|Page loads                          |   User enters information in a form           | displays checkout button for order summary    | |
-|side navbar                         |   click view,                                 | displays next page,                           | |
-|side navbar                         |   click home,                                 | Redirects home                                | |
-|                                    |   click order                                 | displays form section for order               | |
-|If Pickup                           |   click checkout button                       | displays total order summary                  | |
-|If delivery                         |   user enters name and location               | displays checkout button for order summary     | |
+|Page loads                          |   User enters information in a form           | displays Add Quote button for adding quote    | |
+
+|view quote button                         |   click button,                                 | toggle quote                               | |
 
 
 ### Installing
 
-*** To view the app.Visit -> https://github.com/alexmwaura/MOREO--PIZZA-IP4
+*** To view the app.Visit -> https://github.com/alexmwaura/Quotes-Gen
 * Step 1:
 Clone this repo: git clone  
 * Step 2:
 The repo comes in a zipped or compressed format. Extract to your prefered location and open it.
 * Step 3:
-open your terminal and navigate to MOREO RESTAURANT.
+open your terminal and navigate to project-1
 * Step 4:
-To run the website, you'll have to open the index.thml file with a browser of your choice.
+To run the website, you'll have to ng serve to create a port
     
     
 ## Built With
 
-* Javascript - For form validation and logic, toggling effect on images, page responsivenes
+* Angular - for framework
 * HTML - For building Mark Up pages/User Interface
 * CSS - For Styling User Interface
 * Bootstrap - For additional styling
-
+* Materialize - for additional styling
 
 ## License
 
