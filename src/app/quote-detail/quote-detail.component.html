@@ -7,12 +7,15 @@
    
         
         
-         <br>{{quote.subject}} <br><br><hr>
-        <h4 class="red-text"><i class="fa fa-spinner fa-spin red-text"></i>QUOTE:</h4>
+         <div appHighlight>
+                <br>{{quote.subject}} <br><br><hr>
+                <h4 class="red-text"><i class="fa fa-spinner fa-spin red-text"></i>QUOTE:</h4>
          <br>{{quote.quote}} <br><br><hr>
         <h4 class="green-text"><i class="fa fa-spinner fa-spin green-text"></i>Description:</h4>
         
         {{quote.description}} <br><br><hr>
+         </div>
+        
         <div class=" blue-text">
                 PUBLISHED: {{quote.myDate | dateAgo}}    
         </div>
