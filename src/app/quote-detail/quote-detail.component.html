@@ -21,8 +21,12 @@
       {{ quote.description }} <br><br>
       <hr>
     </div>
+     
+    <div class="btn">
+        PUBLISHED: {{ quote.myDate | dateAgo }}
 
-    PUBLISHED: {{ quote.myDate | dateAgo }}
+    </div>
+    
   </div>
 
   <div>
