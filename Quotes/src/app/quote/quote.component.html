@@ -3,7 +3,8 @@
     <h1 style="text-align: center; color: black; font-size: xx-large;">
       My Quotes
     </h1>
-    <hr />
+    <hr>
+    
 
     <div class="row">
       <div class="col-md-8">
@@ -17,13 +18,14 @@
             class="container-fluid "
             *ngFor="let quote of quotes; let i = index"
           >
-            <p id="{{ i }}"  appHighlight style="color: aliceblue;" >
-              <br>
-              
-              
+            <p id="{{ i }}" appHighlight style="color: aliceblue;">
+              <br />
             </p>
 
-            <button class="btn #827717 lime darken-4" (click)="toggleDetails(i)">
+            <button
+              class="btn #827717 lime darken-4"
+              (click)="toggleDetails(i)"
+            >
               VIEW QUOTES</button
             ><br />
 

@@ -1,13 +1,10 @@
-<body class="jumbotron #ffa726 orange lighten-1">
-                CREATED BY:  {{ quote.name }}
+<body class="jumbotron #827717 lime darken-4">
+                <div class="btn btn-dark white-tex">
+                                CREATED BY:  {{ quote.name }}
+                </div>
 
 <div class="md-form white-text"><h4 class="blue-text"><i class="fa fa-spinner fa-spin blue-text"></i>SUBJECT:</h4>
-      <!-- <div class="md-form white-text">
-                  
-
-                  PUBLISHED:  {{}}
-                  <label for="date"></label><br>
-                  <input type="date" class="form-control white-text" id="" [(ngModel)]="newQuote.dateAgo" name="" required> -->
+   
         
         
          <br>{{quote.subject}} <br><br><hr>
@@ -29,7 +26,7 @@
 
          
         <div>
-        <button (click)="upvoteButtonClick ()" class="btn btn-primary">Upvote</button> <br>{{numberOfUpvotes}} <br> <hr>
+        <button (click)="[upvoteButtonClick ()]" class="btn btn-primary">Upvote</button> <br>{{numberOfUpvotes}} <br> <hr>
         <button (click)="downvoteButtonClick()" class="btn btn-danger">Downvote</button> <br> {{numberOfDownvotes}} <br> <hr>
 
         

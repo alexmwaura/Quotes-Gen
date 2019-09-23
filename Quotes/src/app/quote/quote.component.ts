@@ -10,8 +10,7 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
   quotes: Quote []=[
     new Quote(1,'Alex','Have faith and believe it will manifest','inspiration','from the secrets of life'),
-  //  new Quote('', '', '', ''),
-  //  new Quote('Buy weed', 'peddy', 'hobbie', 'enjoy'),
+ 
   ];
 
 
@@ -30,8 +29,9 @@ export class QuoteComponent implements OnInit {
   addNewQuote(quote){
     let quoteLength = this.quotes.length;
     quote.id = quoteLength+1;
+    
     this.quotes.push(quote);
-
+    
 
   }
   
