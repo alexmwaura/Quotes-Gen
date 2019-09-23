@@ -55,9 +55,9 @@ As a user of the website you will be able to:
 ## Behaviour Driven Development (BDD)
 |Behaviour 	           |    Input 	                 |       Output          |
 |----------------------------------------------|:-----------------------------------:|-----------------------------:|       
-|Page loads                          |   User enters information in a form           | displays Add Quote button for adding quote    | |
+|Page loads                          |   User enters information in a form           | displays Add Quote button for adding quote    | |src/app/quote-detail/quote-detail.component.html
 
-|view quote button                         |   click button,                                 | toggle quote                               | |
+
 
 
 ### Installing
